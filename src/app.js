@@ -1,12 +1,12 @@
 import express from 'express';
-import cors from 'cors'
+import cors from 'cors';
 import cookieParser from 'cookie-parser';
 
 const app = express();
 
 app.use(cors({
     origin: process.env.CORS_ORIGIN,
-    credentials: true
+    credentials: false
 }));
 
 //app.use() will be used for confuguration setting and middlewares.
